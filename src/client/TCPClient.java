@@ -5,6 +5,9 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 
+/**
+ * TCPClient class represents a client using TCP protocol.
+ */
 public class TCPClient extends AbstractClient {
   private static final ClientLogger logger = new ClientLogger();
 
@@ -12,10 +15,19 @@ public class TCPClient extends AbstractClient {
   private DataOutputStream outputStream;
   private DataInputStream inputStream;
 
+  /**
+   * Constructs a TCPClient with the specified server host and port.
+   * @param serverHost The host name of the server.
+   * @param serverPort The port number of the server.
+   */
   public TCPClient(String serverHost, int serverPort) {
     super(serverHost, serverPort);
   }
 
+  /**
+   * Connects to the server using TCP protocol.
+   * @throws IOException if an I/O error occurs when connecting.
+   */
   @Override
   public void connect() throws IOException {
     try {
@@ -28,6 +40,9 @@ public class TCPClient extends AbstractClient {
     }
   }
 
+  /**
+   * Disconnects from the server.
+   */
   @Override
   public void disconnect() {
     logger.info("Calling disconnect in the method");
@@ -50,6 +65,11 @@ public class TCPClient extends AbstractClient {
     }
   }
 
+  /**
+   * Sends a request to the server using TCP protocol.
+   * @param request The request to be sent.
+   * @throws IOException if an I/O error occurs when sending the request.
+   */
   @Override
   public void sendRequest(String request) throws IOException {
     try {
@@ -66,6 +86,11 @@ public class TCPClient extends AbstractClient {
     }
   }
 
+  /**
+   * Receives a response from the server using TCP protocol.
+   * @return The response received from the server.
+   * @throws IOException if an I/O error occurs when receiving the response.
+   */
   @Override
   public String receiveResponse() throws IOException {
     try {

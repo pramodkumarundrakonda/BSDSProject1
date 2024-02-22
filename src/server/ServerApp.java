@@ -1,8 +1,16 @@
 package server;
 
+/**
+ * Main class for the server application.
+ */
 public class ServerApp {
   private static final ServerLogger logger = new ServerLogger();
 
+  /**
+   * Main method to start the server application.
+   *
+   * @param args Command-line arguments containing the port number and server type.
+   */
   public static void main(String[] args) {
     if (args.length < 2) {
       logger.error("Insufficient arguments. Usage: java ServerApp <Port> <serverType>");

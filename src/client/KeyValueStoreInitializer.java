@@ -4,16 +4,25 @@ import java.io.IOException;
 
 import static client.AbstractClient.calculateChecksum;
 
+/**
+ * The KeyValueStoreInitializer class initializes and performs operations on the key-value store.
+ */
 public class KeyValueStoreInitializer {
 
   private static final ClientLogger logger = new ClientLogger();
-
   private AbstractClient client;
 
+  /**
+   * Constructs a KeyValueStoreInitializer with the specified client.
+   * @param client The client used to interact with the server.
+   */
   public KeyValueStoreInitializer(AbstractClient client) {
     this.client = client;
   }
 
+  /**
+   * Populates the key-value store with initial data.
+   */
   public void populateKeyValueStore() {
     logger.info("-------------------Initializing the key-value store with 10 pairs---------------");
     for (int i = 1; i <= 10; i++) {
@@ -23,6 +32,9 @@ public class KeyValueStoreInitializer {
     logger.info("---------------Initialization Done !!! -------------------------------------------");
   }
 
+  /**
+   * Performs a set of PUT, GET, and DELETE operations on the key-value store.
+   */
   public void performOperations() {
     logger.info("---------------Performing 5 PUT/GET/DELETE Operations ------------------------");
     for (int i = 11; i <= 15; i++) {
@@ -39,10 +51,15 @@ public class KeyValueStoreInitializer {
     }
   }
 
+  /**
+   * Performs a PUT operation in the key-value store.
+   * @param key The key to be inserted.
+   * @param value The value associated with the key.
+   */
   private void performPutOperation(String key, int value) {
     try {
       String request = "PUT " + key + " " + value;
-      client.sendRequest(request );
+      client.sendRequest(request);
       logger.info("PUT: Key=" + key + ", Value=" + value);
       String response = client.receiveResponse();
       logger.info("Response: " + response);
@@ -51,6 +68,10 @@ public class KeyValueStoreInitializer {
     }
   }
 
+  /**
+   * Performs a GET operation in the key-value store.
+   * @param key The key to retrieve the value.
+   */
   private void performGetOperation(String key) {
     try {
       String request = "GET " + key;
@@ -64,6 +85,10 @@ public class KeyValueStoreInitializer {
     }
   }
 
+  /**
+   * Performs a DELETE operation in the key-value store.
+   * @param key The key to be deleted.
+   */
   private void performDeleteOperation(String key) {
     try {
       String request = "DELETE " + key;

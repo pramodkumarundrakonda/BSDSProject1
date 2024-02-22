@@ -4,6 +4,9 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+/**
+ * TCPHandler class handles TCP connections for the server.
+ */
 public class TCPHandler extends AbstractHandler {
 
   private final int port;
@@ -12,28 +15,45 @@ public class TCPHandler extends AbstractHandler {
 
   private static final ServerLogger logger = new ServerLogger();
 
+  /**
+   * Constructs a TCPHandler with the specified port and key-value store.
+   *
+   * @param port           The port on which the server will listen.
+   * @param keyValueStore  The key-value store to handle the requests.
+   */
   public TCPHandler(int port, KeyValue keyValueStore) {
     super(keyValueStore);
     this.port = port;
   }
 
+  /**
+   * Starts the TCP server and listens for incoming connections.
+   */
   @Override
   public void run() {
     try {
       serverSocket = new ServerSocket(port);
       logger.info("TCP Server started on port " + port);
-      logger.info("Waiting for new connections...");
-      clientSocket = serverSocket.accept();
-      logger.info("New connection from " + clientSocket.getInetAddress());
 
       while (true) {
-        // Handle the client request
-        handleClientRequest(clientSocket);
+        logger.info("Waiting for new connections...");
+        clientSocket = serverSocket.accept();
+        logger.info("New connection from " + clientSocket.getInetAddress());
+
+        // Create a new thread to handle each client request
+        Thread handlerThread = new Thread(() -> {
+          while (true) {
+            // Handle the client request
+            handleClientRequest(clientSocket);
+          }
+        });
+        handlerThread.start();
       }
     } catch (IOException e) {
       logger.error("Error in TCP server: " + e.getMessage());
       e.printStackTrace();
     } finally {
+      // Close the server socket when the server is stopped
       try {
         if (serverSocket != null && !serverSocket.isClosed()) {
           serverSocket.close();
@@ -46,6 +66,11 @@ public class TCPHandler extends AbstractHandler {
     }
   }
 
+  /**
+   * Handles the client request.
+   *
+   * @param clientSocket The client socket from which the request is received.
+   */
   private void handleClientRequest(Socket clientSocket) {
     if (clientSocket == null || clientSocket.isClosed()) {
       return; // Exit method if client socket is invalid or closed
@@ -75,7 +100,6 @@ public class TCPHandler extends AbstractHandler {
         logger.error("Checksum validation failed. Request data may be corrupted.");
       }
 
-
       // Handle the request
       handleRequest(requestData);
       logger.info("Client request handled successfully.");
@@ -86,7 +110,11 @@ public class TCPHandler extends AbstractHandler {
     }
   }
 
-
+  /**
+   * Sends a response to the client.
+   *
+   * @param response The response message to be sent.
+   */
   @Override
   public void sendResponse(String response) {
     try {

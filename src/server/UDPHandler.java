@@ -5,6 +5,9 @@ import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 
+/**
+ * UDPHandler class handles UDP connections for the server.
+ */
 public class UDPHandler extends AbstractHandler {
 
   private final int port;
@@ -14,12 +17,20 @@ public class UDPHandler extends AbstractHandler {
 
   private static final ServerLogger logger = new ServerLogger();
 
-
+  /**
+   * Constructs a UDPHandler with the specified port and key-value store.
+   *
+   * @param port           The port on which the server will listen.
+   * @param keyValueStore  The key-value store to handle the requests.
+   */
   public UDPHandler(int port, KeyValue keyValueStore) {
     super(keyValueStore);
     this.port = port;
   }
 
+  /**
+   * Starts the UDP server and listens for incoming connections.
+   */
   @Override
   public void run() {
     try {
@@ -49,6 +60,11 @@ public class UDPHandler extends AbstractHandler {
     }
   }
 
+  /**
+   * Handles the client request received as a DatagramPacket.
+   *
+   * @param packet The DatagramPacket containing the client request.
+   */
   private void handleClientRequest(DatagramPacket packet) {
     try {
       logger.info("Handling client request");
@@ -61,6 +77,11 @@ public class UDPHandler extends AbstractHandler {
     }
   }
 
+  /**
+   * Sends a response back to the client.
+   *
+   * @param response The response message to be sent.
+   */
   @Override
   public void sendResponse(String response) {
     try {

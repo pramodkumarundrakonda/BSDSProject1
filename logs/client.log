@@ -1,0 +1,117 @@
+22:15:06.790 [main] INFO  client.ClientLogger [INFO ] - Starting TCP client...
+22:15:06.791 [main] INFO  client.ClientLogger [INFO ] - Connecting to the socket
+22:15:06.797 [main] INFO  client.ClientLogger [INFO ] - Connected to server localhost:8585
+22:15:06.798 [main] INFO  client.ClientLogger [INFO ] - -------------------Initializing the key-value store with 10 pairs---------------
+22:15:06.798 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:06.798 [main] INFO  client.ClientLogger [INFO ] - PUT: Key=key1, Value=1
+22:15:06.809 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Inserted Key & value using PUT: Key: key1 Value: 1
+22:15:06.809 [main] INFO  client.ClientLogger [INFO ] - Response: Inserted Key & value using PUT: Key: key1 Value: 1
+22:15:06.809 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:06.809 [main] INFO  client.ClientLogger [INFO ] - PUT: Key=key2, Value=2
+22:15:06.810 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Inserted Key & value using PUT: Key: key2 Value: 2
+22:15:06.810 [main] INFO  client.ClientLogger [INFO ] - Response: Inserted Key & value using PUT: Key: key2 Value: 2
+22:15:06.810 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:06.810 [main] INFO  client.ClientLogger [INFO ] - PUT: Key=key3, Value=3
+22:15:06.810 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Inserted Key & value using PUT: Key: key3 Value: 3
+22:15:06.810 [main] INFO  client.ClientLogger [INFO ] - Response: Inserted Key & value using PUT: Key: key3 Value: 3
+22:15:06.810 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:06.811 [main] INFO  client.ClientLogger [INFO ] - PUT: Key=key4, Value=4
+22:15:06.811 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Inserted Key & value using PUT: Key: key4 Value: 4
+22:15:06.811 [main] INFO  client.ClientLogger [INFO ] - Response: Inserted Key & value using PUT: Key: key4 Value: 4
+22:15:06.811 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:06.811 [main] INFO  client.ClientLogger [INFO ] - PUT: Key=key5, Value=5
+22:15:06.811 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Inserted Key & value using PUT: Key: key5 Value: 5
+22:15:06.811 [main] INFO  client.ClientLogger [INFO ] - Response: Inserted Key & value using PUT: Key: key5 Value: 5
+22:15:06.812 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:06.812 [main] INFO  client.ClientLogger [INFO ] - PUT: Key=key6, Value=6
+22:15:06.812 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Inserted Key & value using PUT: Key: key6 Value: 6
+22:15:06.812 [main] INFO  client.ClientLogger [INFO ] - Response: Inserted Key & value using PUT: Key: key6 Value: 6
+22:15:06.812 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:06.812 [main] INFO  client.ClientLogger [INFO ] - PUT: Key=key7, Value=7
+22:15:06.812 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Inserted Key & value using PUT: Key: key7 Value: 7
+22:15:06.812 [main] INFO  client.ClientLogger [INFO ] - Response: Inserted Key & value using PUT: Key: key7 Value: 7
+22:15:06.812 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:06.813 [main] INFO  client.ClientLogger [INFO ] - PUT: Key=key8, Value=8
+22:15:06.813 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Inserted Key & value using PUT: Key: key8 Value: 8
+22:15:06.813 [main] INFO  client.ClientLogger [INFO ] - Response: Inserted Key & value using PUT: Key: key8 Value: 8
+22:15:06.813 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:06.813 [main] INFO  client.ClientLogger [INFO ] - PUT: Key=key9, Value=9
+22:15:06.813 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Inserted Key & value using PUT: Key: key9 Value: 9
+22:15:06.814 [main] INFO  client.ClientLogger [INFO ] - Response: Inserted Key & value using PUT: Key: key9 Value: 9
+22:15:06.814 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:06.814 [main] INFO  client.ClientLogger [INFO ] - PUT: Key=key10, Value=10
+22:15:06.814 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Inserted Key & value using PUT: Key: key10 Value: 10
+22:15:06.814 [main] INFO  client.ClientLogger [INFO ] - Response: Inserted Key & value using PUT: Key: key10 Value: 10
+22:15:06.814 [main] INFO  client.ClientLogger [INFO ] - ---------------Initialization Done !!! -------------------------------------------
+22:15:06.814 [main] INFO  client.ClientLogger [INFO ] - ---------------Performing 5 PUT/GET/DELETE Operations ------------------------
+22:15:06.814 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:06.814 [main] INFO  client.ClientLogger [INFO ] - PUT: Key=key11, Value=11
+22:15:06.815 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Inserted Key & value using PUT: Key: key11 Value: 11
+22:15:06.815 [main] INFO  client.ClientLogger [INFO ] - Response: Inserted Key & value using PUT: Key: key11 Value: 11
+22:15:06.816 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:06.818 [main] INFO  client.ClientLogger [INFO ] - GET: Key=key11, Checksum=3272108865
+22:15:06.819 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Retrieved Key value using GET: Key: key11 Value: 11
+22:15:06.819 [main] INFO  client.ClientLogger [INFO ] - Response: Retrieved Key value using GET: Key: key11 Value: 11
+22:15:06.819 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:06.820 [main] INFO  client.ClientLogger [INFO ] - DELETE: Key=key11, Checksum=291957189
+22:15:06.820 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Deletion of  Key Successful: Key: key11
+22:15:06.820 [main] INFO  client.ClientLogger [INFO ] - Response: Deletion of  Key Successful: Key: key11
+22:15:06.820 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:06.820 [main] INFO  client.ClientLogger [INFO ] - PUT: Key=key12, Value=12
+22:15:06.820 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Inserted Key & value using PUT: Key: key12 Value: 12
+22:15:06.820 [main] INFO  client.ClientLogger [INFO ] - Response: Inserted Key & value using PUT: Key: key12 Value: 12
+22:15:06.820 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:06.820 [main] INFO  client.ClientLogger [INFO ] - GET: Key=key12, Checksum=1510030075
+22:15:06.821 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Retrieved Key value using GET: Key: key12 Value: 12
+22:15:06.821 [main] INFO  client.ClientLogger [INFO ] - Response: Retrieved Key value using GET: Key: key12 Value: 12
+22:15:06.821 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:06.821 [main] INFO  client.ClientLogger [INFO ] - DELETE: Key=key12, Checksum=2289023103
+22:15:06.821 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Deletion of  Key Successful: Key: key12
+22:15:06.821 [main] INFO  client.ClientLogger [INFO ] - Response: Deletion of  Key Successful: Key: key12
+22:15:06.821 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:06.822 [main] INFO  client.ClientLogger [INFO ] - PUT: Key=key13, Value=13
+22:15:06.822 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Inserted Key & value using PUT: Key: key13 Value: 13
+22:15:06.822 [main] INFO  client.ClientLogger [INFO ] - Response: Inserted Key & value using PUT: Key: key13 Value: 13
+22:15:06.822 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:06.822 [main] INFO  client.ClientLogger [INFO ] - GET: Key=key13, Checksum=755370605
+22:15:06.822 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Retrieved Key value using GET: Key: key13 Value: 13
+22:15:06.822 [main] INFO  client.ClientLogger [INFO ] - Response: Retrieved Key value using GET: Key: key13 Value: 13
+22:15:06.822 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:06.822 [main] INFO  client.ClientLogger [INFO ] - DELETE: Key=key13, Checksum=4285040873
+22:15:06.823 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Deletion of  Key Successful: Key: key13
+22:15:06.823 [main] INFO  client.ClientLogger [INFO ] - Response: Deletion of  Key Successful: Key: key13
+22:15:06.823 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:06.823 [main] INFO  client.ClientLogger [INFO ] - PUT: Key=key14, Value=14
+22:15:06.823 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Inserted Key & value using PUT: Key: key14 Value: 14
+22:15:06.823 [main] INFO  client.ClientLogger [INFO ] - Response: Inserted Key & value using PUT: Key: key14 Value: 14
+22:15:06.823 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:06.823 [main] INFO  client.ClientLogger [INFO ] - GET: Key=key14, Checksum=3009585102
+22:15:06.824 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Retrieved Key value using GET: Key: key14 Value: 14
+22:15:06.824 [main] INFO  client.ClientLogger [INFO ] - Response: Retrieved Key value using GET: Key: key14 Value: 14
+22:15:06.824 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:06.824 [main] INFO  client.ClientLogger [INFO ] - DELETE: Key=key14, Checksum=1628183882
+22:15:06.824 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Deletion of  Key Successful: Key: key14
+22:15:06.824 [main] INFO  client.ClientLogger [INFO ] - Response: Deletion of  Key Successful: Key: key14
+22:15:06.824 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:06.824 [main] INFO  client.ClientLogger [INFO ] - PUT: Key=key15, Value=15
+22:15:06.824 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Inserted Key & value using PUT: Key: key15 Value: 15
+22:15:06.825 [main] INFO  client.ClientLogger [INFO ] - Response: Inserted Key & value using PUT: Key: key15 Value: 15
+22:15:06.825 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:06.825 [main] INFO  client.ClientLogger [INFO ] - GET: Key=key15, Checksum=3294998360
+22:15:06.825 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Retrieved Key value using GET: Key: key15 Value: 15
+22:15:06.825 [main] INFO  client.ClientLogger [INFO ] - Response: Retrieved Key value using GET: Key: key15 Value: 15
+22:15:06.825 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:06.825 [main] INFO  client.ClientLogger [INFO ] - DELETE: Key=key15, Checksum=369831388
+22:15:06.826 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Deletion of  Key Successful: Key: key15
+22:15:06.826 [main] INFO  client.ClientLogger [INFO ] - Response: Deletion of  Key Successful: Key: key15
+22:15:06.829 [main] INFO  client.ClientLogger [INFO ] - Waiting for user input...
+22:15:13.950 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:13.954 [main] INFO  client.ClientLogger [INFO ] - Request sent to server: PUT pramod 1
+22:15:13.956 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Inserted Key & value using PUT: Key: pramod Value: 1
+22:15:13.957 [main] INFO  client.ClientLogger [INFO ] - Response received from server: Inserted Key & value using PUT: Key: pramod Value: 1
+22:15:13.957 [main] INFO  client.ClientLogger [INFO ] - Waiting for user input...
+22:15:19.182 [main] INFO  client.ClientLogger [INFO ] - Request sent to server localhost:8585
+22:15:19.183 [main] INFO  client.ClientLogger [INFO ] - Request sent to server: PUT asdffvadsf 6
+22:15:19.183 [main] INFO  client.ClientLogger [INFO ] - Response received from server localhost:8585 Response: Inserted Key & value using PUT: Key: asdffvadsf Value: 6
+22:15:19.183 [main] INFO  client.ClientLogger [INFO ] - Response received from server: Inserted Key & value using PUT: Key: asdffvadsf Value: 6
+22:15:19.184 [main] INFO  client.ClientLogger [INFO ] - Waiting for user input...
