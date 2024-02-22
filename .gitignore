@@ -1,0 +1,13 @@
+# Ignore .class files
+*.class
+
+*.iml
+
+# Ignore logs folder
+logs/
+
+# Ignore .idea folder
+.idea/
+
+# Ignore out folder
+out/
